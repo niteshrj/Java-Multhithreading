@@ -20,6 +20,7 @@ public class PrimeNumberNoConcurrency {
             };
 
             Thread t = new Thread(r);
+            t.setDaemon(true);
             t.start();
 
         }
